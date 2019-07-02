@@ -39,7 +39,7 @@ function restoDeCalculos(id){
 	var comp = "";
 
 	if(recibido.length == 0){
-		recibido = parseFloat("0.00").toFixed(2);
+		//recibido = parseFloat("0.00").toFixed(2);
 		
 	}else{
 		recibido = document.getElementById("inputAnticipoRecibido").value;
@@ -65,6 +65,7 @@ function restoDeCalculos(id){
 	document.getElementById("input6").value = cuota6;
 	document.getElementById("inputFacturar").value = facturar.toFixed(2);
 
+	alert("[SUCCESS]:Calculo Realizado Exitosamente!");
 	return false;
 
 }

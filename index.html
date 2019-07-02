@@ -53,149 +53,148 @@
   	</div>
     
   </nav>
-</div>
 
-
-<!-- **************************INICIA LA SECCIÓN DE FORMULARIO***********************************************-->
+  <!-- **************************INICIA LA SECCIÓN DE FORMULARIO***********************************************-->
       <div class="panel panel-default">
         <div class="panel-heading bg-secondary">
           <h2 class="panel-title" text-decoration: bold;">CALCULADORA</h2>
         </div> 
-        <div class="panel-body border-info" font-size: small;">
+        <div class="panel-body border-info " font-size: small;">
           <form role="form">
               <!--********************* PRECIO DE VENTA ************************-->
-              <div class="form-group mb-0">
-                <label for="inputTotal">PRECIO VENTA</label>
+              <div class="form-group col-sm-6  mb-0 mx-sm-5">
+                <label for="inputTotal "><strong>PRECIO VENTA</strong></label>
                 <div id class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <div class="input-group-text">Q.</div>
                   </div>
-                  <input type="text" class="form-control" id="inputTotal" placeholder="0.00">
+                  <input type="text" class="form-control text-center" id="inputTotal" placeholder="0.00">
                   <div class="input-group-prepend">
-                      <button class="btn btn-primary" type="submit" onclick="anticipoSugerido(this.id); return false;">Aceptar</button>                  
+                      <button class="btn btn-dark" type="submit" onclick="anticipoSugerido(this.id); return false;">Aceptar</button>                  
                   </div>
                 </div>
               </div>
               <!--********************* % DE DESCUENTO ************************-->
-              <div class="form-group mb-0">
+              <div class="form-group col-sm-6 mb-0 mx-sm-5 ">
                 <label for="inputDescuento">% DESCUENTO(opcional)</label>
                 <div id class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <div class="input-group-text">%</div>
                   </div>
-                  <input type="text" class="form-control" id="inputDescuento" placeholder="0.00">
+                  <input type="text" class="form-control text-center" id="inputDescuento" placeholder="0.00">
                   <div class="input-group-prepend">
-                      <button class="btn btn-info" type="submit" onclick="calculaDescuento(this.id); return false; " aria-expanded="true">Aceptar</button>                  
+                      <button class="btn btn-dark" type="submit" onclick="calculaDescuento(this.id); return false; " aria-expanded="true">Aceptar</button>                  
                   </div>
                 </div>
               </div>
               <!--********************* ANTICIPO SUGERIDO************************-->
-              <div class="form-group mb-0" >
-                <label for="inputAnticipoSugerido">ANTICIPO SUGERIDO</label>
+              <div class="form-group  col-sm-6 mb-0 mx-sm-5" >
+                <label for="inputAnticipoSugerido"><strong>ANTICIPO SUGERIDO</strong></label>
                 <div id class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <div class="input-group-text">Q.</div>
                   </div>
-                  <input type="text" readonly class="form-control" id="inputAnticipoSugerido" placeholder="0.00" style="background-color: #94F3AD">
+                  <input type="text" readonly class="form-control text-center" id="inputAnticipoSugerido" placeholder="0.00" style="background-color: #94F3AD; font-weight:bold;">
                 </div>
               </div>
               <!--********************* ANTICIPO RECIBIDO************************-->
-              <div class="form-group mb-0">
+              <div class="form-group col-sm-6 mb-0 mx-sm-5">
                 <label for="inputAnticipoRecibido">ANTICIPO RECIBIDO</label>
                 <div id class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <div class="input-group-text">Q.</div>
                   </div>
-                  <input type="text" class="form-control" id="inputAnticipoRecibido" placeholder="0.00" style="background-color: #B7B8B9" text="0">
+                  <input type="text" class="form-control text-center" id="inputAnticipoRecibido" placeholder="0.00" style="background-color: #CCF8C9" text="0">
                   <div class="input-group-prepend">
-                      <button class="btn btn-primary" type="submit" onclick="restoDeCalculos(this.id); return false;">Aceptar</button>                  
+                      <button class="btn btn-dark" type="submit" onclick="restoDeCalculos(this.id); return false;">Aceptar</button>                  
                   </div>
                 </div>
               </div>
               <!--********************* BALANCE ************************-->
-              <div class="form-group mb-0">
+              <div class="form-group col-sm-6 mb-0 mx-sm-5">
                 <label for="inputBalance">BALANCE</label>
                 <div id class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <div class="input-group-text">Q.</div>
                   </div>
-                  <input type="text" readonly class="form-control" id="inputBalance" placeholder="0.00" style="background-color: #B7B8B9">
+                  <input type="text" readonly class="form-control text-center" id="inputBalance" placeholder="0.00" style="background-color: #F1F1F0">
                 </div>
               </div>
               <!--********************* CUOTA ************************-->
-              <div class="form-group mb-0">
+              <div class="form-group col-sm-6 mb-0 mx-sm-5">
                 <label for="inputCuota">CUOTA</label>
                 <div id class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <div class="input-group-text">Q.</div>
                   </div>
-                  <input type="text" readonly class="form-control" id="inputCuota" placeholder="0.00" style="background-color: #B7B8B9">
+                  <input type="text" readonly class="form-control text-center" id="inputCuota" placeholder="0.00" style="background-color: #F1F1F0">
                 </div>
               </div>
               <!--********************* SALDO A FINANCIAR ************************-->
-              <div class="form-group mb-0">
-                <label for="inputSaldoFinanciar">SALDO A FINANCIAR</label>
+              <div class="form-group col-sm-6 mb-0 mx-sm-5">
+                <label for="inputSaldoFinanciar"><strong>SALDO A FINANCIAR</strong></label>
                 <div id class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <div class="input-group-text">Q.</div>
                   </div>
-                  <input type="text" readonly class="form-control" id="inputSaldoFinanciar" placeholder="0.00" style="background-color: #F59292">
+                  <input type="text" readonly class="form-control text-center" id="inputSaldoFinanciar" placeholder="0.00" style="background-color: #F59292; font-weight:bold;">
                 </div>
               </div>
               <!--********************* 24 PAGOS ************************-->
-              <div class="form-group mb-0">
+              <div class="form-group col-sm-6 mb-0 mx-sm-5">
                 <label for="input24">24 PAGOS</label>
                 <div id class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <div class="input-group-text">Q.</div>
                   </div>
-                  <input type="text" readonly class="form-control" id="input24" placeholder="0.00" style="background-color: #B7B8B9">
+                  <input type="text" readonly class="form-control text-center" id="input24" placeholder="0.00" style="background-color: #9CD7FF">
                 </div>
               </div>
               <!--********************* 18 CUOTAS ************************-->
-              <div class="form-group mb-0">
+              <div class="form-group col-sm-6 mb-0 mx-sm-5">
                 <label for="input18">18 CUOTAS</label>
                 <div id class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <div class="input-group-text">Q.</div>
                   </div>
-                  <input type="text" readonly class="form-control" id="input18" placeholder="0.00" style="background-color: #B7B8B9">
+                  <input type="text" readonly class="form-control text-center" id="input18" placeholder="0.00" style="background-color: #AED9F5">
                 </div>
               </div>
               <!--********************* 12 CUOTAS ************************-->
-              <div class="form-group mb-0">
+              <div class="form-group col-sm-6 mb-0 mx-sm-5">
                 <label for="input12">12 CUOTAS</label>
                 <div id class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <div class="input-group-text">Q.</div>
                   </div>
-                  <input type="text" readonly class="form-control" id="input12" placeholder="0.00" style="background-color: #B7B8B9">
+                  <input type="text" readonly class="form-control text-center" id="input12" placeholder="0.00" style="background-color: #C0E2F9">
                 </div>
               </div>
               <!--********************* 6 CUOTAS ************************-->
-              <div class="form-group mb-0">
+              <div class="form-group col-sm-6 mb-0 mx-sm-5">
                 <label for="input6">6 CUOTAS</label>
                 <div id class="input-group input-group-sm">
                   <div class="input-group-prepend">
                     <div class="input-group-text">Q.</div>
                   </div>
-                  <input type="text" readonly class="form-control" id="input6" placeholder="0.00" style="background-color: #B7B8B9">
+                  <input type="text" readonly class="form-control text-center" id="input6" placeholder="0.00" style="background-color: #D2E8F8">
                 </div>
               </div>
               <!--********************* FACTURAR ************************-->
-              <div class="form-group mb-0">
-                <label for="inputFacturar"><h4>FACTURAR</h4></label>
+              <div class="form-group col-sm-6 mb-0 mx-sm-5">
+                <label for="inputFacturar"><h4><strong>FACTURAR</strong></h4></label>
                 <div id class="input-group input-group-sm" style="text-decoration: bold;">
                   <div class="input-group-prepend">
                     <div class="input-group-text" style="text-decoration: bold">Q.</div>
                   </div>
-                  <input type="text" readonly class="form-control" id="inputFacturar" placeholder="0.00" style="background-color: #8ED4EF; text-decoration: bold;">
+                  <input type="text" readonly class="form-control text-center" id="inputFacturar" placeholder="0.00" style="background-color: #84F3EF; font-weight: bold;">
                   <div class="input-group-prepend">
-                    <button class="btn btn-primary" type="submit" onclick="reiniciar(this.id);return true;" >Reiniciar</button>
+                    <button class="btn btn-dark" type="submit" onclick="reiniciar(this.id);return true;" >Reiniciar</button>
                   </div>
                 </div>
               </div>
               </div>
+              <div class="panel-footer panel-group-sm" style="color:white"><h6><p>________________________</p><p>__________________________</p></h6></div>
               
           </form>
         </div>
@@ -203,6 +202,8 @@
 
 
       <!-- **************************FINALIZA LA SECCIÓN DE FORMULARIO***********************************************-->
+</div>
+
 
 <script src="/js/bootstrap.js"></script>
 <script src="js/funciones.js"></script>
